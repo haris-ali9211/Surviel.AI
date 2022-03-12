@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
+    "find-remove": "^4.0.4",
+    "mongoose": "^6.2.6",
     "node-rtsp-stream": "^0.0.9",
     "nodemon": "^2.0.15"
   }

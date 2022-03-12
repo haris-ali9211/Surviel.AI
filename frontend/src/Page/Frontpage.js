@@ -6,7 +6,7 @@ import Panel from "./Panel";
 const Main = ()=>{
     return(
         <div>
-            <SlideNavbar/>
+            {/* <SlideNavbar/> */}
             <Panel/>
         </div>
     )

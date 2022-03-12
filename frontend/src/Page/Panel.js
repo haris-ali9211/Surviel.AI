@@ -10,7 +10,9 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import CastConnectedIcon from '@mui/icons-material/CastConnected';
 import video1 from '../video/1080P HD Business IP Camera Samples and Features - Platinum CCTV.mp4'
 import LiveTvIcon from '@mui/icons-material/LiveTv';
-import cctv from '../Image/cctv.png'
+import cctv from '../Image/cctv.png';
+import ReactPlayer from 'react-player'
+
 
 const Panel = () => {
     return (
@@ -57,38 +59,54 @@ const Panel = () => {
                                 <div className="d-flex p-3">
                                     <LiveTvIcon style={{ fontSize: 32, color: "black", marginRight: 4 }} />
                                     <h3 className="">
-                                        Living Room Camera
+                                        Developer Room Camera
                                     </h3>
                                 </div>
                             </div>
 
                             <div>
                                 <div className="d-flex justify-content-center ">
+                                    <ReactPlayer url='http://localhost:4000/index.m3u8'
+                                        // playing={true}
+                                        // width='900px'
+                                        // height='500px'
+                                        controls={true}
 
-                                    <video width="700" height="350" controls className="m-2" >
-                                        <source src={video1} type="video/mp4" />
-                                    </video>
-
+                                        fluid={false}
+                                        width={1280}
+                                        height={500}
+                                    />
                                 </div>
 
                                 <div className="d-flex flex-row">
 
-                                    <div>
-                                        <video width="300" height="200" controls className="m-2" >
+                                    <div className="m-2">
+                                        {/* <video width="300" height="200" controls className="m-2" >
                                             <source src={video1} type="video/mp4" />
-                                        </video>
+                                        </video> */}
+                                        {/* <ReactPlayer url='http://localhost:4000/index.m3u8'
+                                            width="300px"
+                                            height="200px"
+                                            controls={true}
+
+                                        /> */}
                                     </div>
 
-                                    <div>
-                                        <video width="300" height="200" controls className="m-2" >
-                                            <source src={video1} type="video/mp4" />
-                                        </video>
+                                    <div className="m-2">
+                                        {/* <ReactPlayer url='http://localhost:4000/index.m3u8'
+                                            // playing={true}
+                                            width="300px"
+                                            height="200px"
+                                            controls={true}
+                                        /> */}
                                     </div>
 
-                                    <div>
-                                        <video width="300" height="200" controls className="m-2" >
-                                            <source src={video1} type="video/mp4" />
-                                        </video>
+                                    <div className="m-2">
+                                        {/* <ReactPlayer url='http://localhost:4000/index.m3u8'
+                                            width="300px"
+                                            height="200px"
+                                            controls={true}
+                                        /> */}
                                     </div>
 
                                 </div>
@@ -105,7 +123,7 @@ const Panel = () => {
                             </div>
 
                             <div>
-                                <Card border="primary"  style={{ width: "auto", marginTop: 110, background: "none", fontSize:20}}>
+                                <Card border="primary" style={{ width: "auto", marginTop: 110, background: "none", fontSize: 20 }}>
                                     <div>
                                         <p className="text-start ">
                                             Share Alert
